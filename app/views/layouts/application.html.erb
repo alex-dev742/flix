@@ -15,17 +15,10 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <header>
-      <%= image_tag("logo.png") %>
-    </header>
+    <%= render "layouts/header" %>
     <div class="content">
       <%= yield %>
     </div>
-    <footer>
-      <p>
-        Copyright &copy; <%= Time.now.year %>
-        <%= link_to "The Pragmatic Studio", "https://pragmaticstudio.com" %>
-      </p>
-    </footer>
+    <%= render "layouts/footer" %>
   </body>
 </html>
